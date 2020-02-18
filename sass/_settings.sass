@@ -8,21 +8,23 @@ body
 img
   max-width: 100%
 .container
-  width: 85%
+  width: 95%
   max-width: 1164px
   margin: auto
 .row
   display: flex
   align-items: flex-start
-  justify-content: space-around
-.col
-  &-30
-    flex-basis: 23.5%
-.card
+  justify-content: space-between
+.wrapper
+  display: flex
+  justify-content: space-between
+  width: 35.625rem
+.card   
+  width: 273px
+  height: 196px
   position: relative
   display: flex
   justify-content: flex-end
-  height: 196px
   flex-direction: column
   background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%)
   border-radius: 4px
@@ -48,3 +50,4 @@ img
     font-size: 0.75rem
     font-weight: 400
     color: darken($light, 6.25%)
+

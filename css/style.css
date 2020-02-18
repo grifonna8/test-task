@@ -318,7 +318,7 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 85%;
+  width: 95%;
   max-width: 1164px;
   margin: auto; }
 
@@ -327,18 +327,24 @@ img {
   display: flex;
   -webkit-box-align: start;
   align-items: flex-start;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
 
-.col-30 {
-  flex-basis: 23.5%; }
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 35.625rem; }
 
 .card {
+  width: 273px;
+  height: 196px;
   position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
   justify-content: flex-end;
-  height: 196px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -368,5 +374,30 @@ img {
     font-weight: 400;
     color: #efefef; }
 
-.news__card {
+.news {
   margin-top: 6.25rem; }
+
+@media screen and (max-width: 1264px) {
+  .wrapper {
+    display: -webkit-box;
+    display: flex; }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+  .news__card {
+    margin-bottom: 1.562rem; } }
+
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 14px; }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .card__subtitle {
+    font-size: 0.857rem; } }
