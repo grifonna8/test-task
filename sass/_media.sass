@@ -8,12 +8,42 @@
   .news
     &__card
       margin-bottom: 1.562rem
+  .card
+    &__image
+      border-radius: 4px
+    &__title
+      margin: 0px 0px 0px 15px
+      width: 93%
 
 @media screen and ( max-width: 660px )
   html
     font-size: 14px
   .wrapper
     flex-direction: column
+    align-items: center
+    width: auto
   .card
+    background: none
+    flex-direction: row
+    width: 288px
+    height: 100px
+    &__title
+      color: $dark
+      line-height: 1.285rem 
+      width: 90%
+      margin: 0 auto
     &__subtitle
       font-size: 0.857rem
+      color: $dark
+      width: 92%
+    &__image
+      position: relative
+      width: 100px
+      height: 100px
+      object-fit: cover
+      border-radius: 4px
+    &__text
+      display: flex
+      flex-direction: column
+
+
